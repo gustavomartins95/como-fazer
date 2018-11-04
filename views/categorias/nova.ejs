@@ -1,0 +1,15 @@
+<%- include('../header') %>
+
+<div class="container-fluid mt-3">
+    <form class="form-inline" method="POST" action="/categorias/nova">
+        <div class="form-group">
+            <label for="categoria" class="sr-only">Categoria</label>
+            <input type="text" class="form-control" name="categoria" id="categoria" placeholder="Nome da categoria"
+                autofocus>
+        </div>
+        <button type="submit" class="btn btn-success ml-2">Cadastrar</button>
+        <a class="btn btn-dark ml-2" href="/categorias">Voltar</a>
+    </form>
+</div>
+
+<%- include('../footer') %>
